@@ -18,27 +18,15 @@
       <script src="bootstrap-3.0.0//assets/js/respond.min.js"></script>
     <![endif]-->
 
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"/>
-    <script type="text/javascript">
-(function ($) {
-  $(document).ready(function(){    
-    // --------------
-    // prepare events
-    // --------------
-    // click add new family member button
-    $('.numbers > .col-md-1').click(function() {
-      console.log($(this).html());
-      return false;
-    });    
-    // click edit family member link
-  });
-})(jQuery);
-    </script>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
 
     
     <style type="text/css">
-      .numbers .col-md-1 {font-size:22px; padding: 10px; border:1px solid #000; text-align:center; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; cursor: default}
+      .numbers .col-md-1 {font-size:22px; padding: 10px; border:1px solid #000; text-align:center; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; cursor: arrow}
       .col-md-12 {padding:10px}
+      .numbers .col-md-1.selected {background-color:#47a447; border-color:#398439}
+      .numbers .col-md-1.listed {background-color:#CCC}
     </style>
   </head>
 
@@ -159,7 +147,7 @@
         <div class="col-md-5"></div>
       </div>
       <div class="row">
-        <div class="col-md-12"><button type="button" class="btn btn-info">Maak bord leeg</button></div>
+        <div class="col-md-12"><button type="button" class="btn btn-info btn-empty-board">Maak bord leeg</button></div>
         
       </div>
 
