@@ -6,7 +6,8 @@
     // click add new family member button
     $('.numbers > .col-md-1').click(function() {
       if ($(this).hasClass('empty')) {
-        $('.selected').addClass('listed').removeClass('.selected');
+        $('.selected').addClass('listed').removeClass('selected');
+//        $('.numbers > .col-md-1').removeClass('selected');
         $(this).removeClass('empty');
         $(this).addClass('selected');
       }
@@ -19,7 +20,8 @@
         $(this).addClass('empty');
       }
       else {
-        $('.selected').addClass('listed').removeClass('.selected');
+        $('.selected').addClass('listed').removeClass('selected');
+        //$('.numbers > .col-md-1').removeClass('.selected');
         $(this).addClass('selected');
       }
       return false;
