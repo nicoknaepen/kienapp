@@ -33,7 +33,10 @@
         $('.numbers > .col-md-1').removeClass('empty');
         $('.numbers > .col-md-1').addClass('empty');
       }
-    });  
+    });
+    $('button.scaler').click(function() {
+      $('body').attr('class', $(this).attr('data-class'));
+    });
     // click edit family member link
   });
 })(jQuery);
